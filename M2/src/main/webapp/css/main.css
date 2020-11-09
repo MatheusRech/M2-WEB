@@ -45,9 +45,13 @@ input:focus, textarea:focus, select:focus {
     background-color: deepskyblue;
 }
 
+label {
+    font-family: 'Times New Roman';
+}
+
 body{
     padding-left: 2em;
     padding-right: 2em;
-    font-family: Osvald;
+    font-family: 'Times New Roman';
     line-height: 1.6;
 }
