@@ -11,6 +11,8 @@ function validaFormulario(){
     
     let retorno = false;
     
+    limpaStyle();
+    
     divError.innerHTML = "";
     
     divError.innerHTML+= "<br><lu>";
@@ -122,6 +124,7 @@ function cadastraObra(){
     
     let deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Excluir";
+    deleteButton.classList.add("deletButton");
     deleteButton.addEventListener("click",function(){
         
         if(!window.confirm("Voce deseja deletar esta arte ?"))
@@ -145,6 +148,7 @@ function cadastraObra(){
         
         let detalhe = document.createElement("label");
         detalhe.id = tr.rowIndex;
+        detalhe.classList.add("descricaoObra");
         detalhe.innerHTML = tr.value;
         tr.appendChild(detalhe);
     });

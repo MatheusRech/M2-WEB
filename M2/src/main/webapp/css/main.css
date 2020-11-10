@@ -8,6 +8,18 @@ and open the template in the editor.
     Author     : Matheus
 */
 
+*{
+  font-family:Anton;
+}
+
+body{
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: Anton;
+    line-height: 1.6;
+    background-color: #f2c9ff;
+}
+
 table{
     font-size: 1em;
 }
@@ -20,13 +32,13 @@ td {
 }
 
 th {
-    background-color: white;
+    background-color: transparent;
     border-bottom: 3px;
     border-bottom-style: solid;
 }
 
-tr:focus{
-    background-color: blue;
+tr:hover{
+    background-color: #956fa1;
 }
 
 tr:last-child{
@@ -42,16 +54,5 @@ input, textarea, select {
 }
 
 input:focus, textarea:focus, select:focus {
-    background-color: deepskyblue;
-}
-
-label {
-    font-family: 'Times New Roman';
-}
-
-body{
-    padding-left: 2em;
-    padding-right: 2em;
-    font-family: 'Times New Roman';
-    line-height: 1.6;
+    background-color: #956fa1;
 }

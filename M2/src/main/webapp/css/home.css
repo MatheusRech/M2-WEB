@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/11/2020, 12:41:59
+    Author     : Matheus
+*/
+
+.titulo{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.deletButton{
+    margin-left:20px;
+    margin-top:18px;
+}
+
+.descricaoObra{
+    margin-left:32px;
+}
+
+.buttonCadastro{
+    border-style: solid;
+    background-color: #c290d1;
+    border-color: #956fa1;
+}
+
+.buttonCadastro:focus{
+    background-color: #956fa1;
+    border-style: solid;
+    border-color: #c290d1;
+}

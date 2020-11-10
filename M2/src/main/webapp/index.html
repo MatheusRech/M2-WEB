@@ -6,38 +6,43 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Deluxe Obras de Arte</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/home.css">
         <script src="js/functions.js"></script>
     </head>
     <body>
+        <div class="titulo">
+            <h1>Deluxe Obras de Arte</h1>
+        </div>
         <form id="cadastroObra" name="cadastroObra">
-            <label>Nome da obra:</label>
-            <input type="text" maxlength="100" name="nomeObra" id="nomeObra" onfocus="limpaStyle()">
+            <h3>Cadastro de Obras</h3>
+            <label style="font-family: Anton;">Nome da obra:</label><br>
+            <input type="text" maxlength="100" name="nomeObra" id="nomeObra">
             <br>
             
-            <label>Autor da obra:</label>
-            <input type="text" maxlength="100" name="autorObra" id="autorObra" onfocus="limpaStyle()">
+            <label style="font-family: Anton;">Autor da obra:</label><br>
+            <input type="text" maxlength="100" name="autorObra" id="autorObra">
             <br>
             
-            <label>Ano de origem da obra:</label>
-            <input type="text" maxlength="4" name="anoObra" id="anoObra" onfocus="limpaStyle()">
+            <label style="font-family: Anton;">Ano de origem da obra:</label><br>
+            <input type="text" maxlength="4" name="anoObra" id="anoObra">
             <br>
             
-            <label>Período da obra:</label>
+            <label style="font-family: Anton;">Período da obra:</label>
             <br>
             
-            <input type="radio" name="periodoObra" id="dc" onfocus="limpaStyle()">
-            <label for="dc">d.C</label>
+            <input type="radio" name="periodoObra" id="dc">
+            <label for="dc" style="font-family: Anton;">d.C</label>
             <br>
             
-            <input type="radio" name="periodoObra" id="ac" onfocus="limpaStyle()">
-            <label for="ac">a.C</label>
+            <input type="radio" name="periodoObra" id="ac">
+            <label for="ac" style="font-family: Anton;">a.C</label>
             <br>
             
-            <label>Tipo da obra:</label>
-            <select name="tipoobra" id="tipoObra" form="cadastroObra" onfocus="limpaStyle()">
+            <label style="font-family: Anton;">Tipo da obra:</label><br>
+            <select name="tipoobra" id="tipoObra" form="cadastroObra">
                 <option value="null"></option>
                 <option value="quadro">Quadro</option>
                 <option value="escultura">Escultura</option>
@@ -45,14 +50,16 @@ and open the template in the editor.
             </select>
             <br>
             
-            <label>Detalhamento:</label>
+            <label style="font-family: Anton;">Detalhamento:</label><br>
             <textarea maxlength="2000" name="detalheObra" id="detalheObra"></textarea>
             <br>
-            
-            <input id="clickMe" type="button" value="clickme" onclick="validaFormulario();" />
+            <br>
+            <input id="clickMe" type="button" value="Cadastrar Obra" onclick="validaFormulario();" class="buttonCadastro"/>
         </form>
+        
         <div id="messageError"> 
         </div>
+        <br>
         <div>
             <table>
                 <thead>
